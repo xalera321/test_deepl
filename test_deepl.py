@@ -64,7 +64,7 @@ input_field.send_keys('Hello World!')
 
 # Ожидаем, пока появится элемент span с текстом "Hello World"
 try:
-    WebDriverWait(browser, 2).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'span.--l.--r.sentence_highlight')))
+    WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'span.--l.--r.sentence_highlight')))
     print('Текст "Hello World!" успешно введен и отображается')
 except:
     print('Элемент с текстом "Hello World!" не найден или текст не отображается')
